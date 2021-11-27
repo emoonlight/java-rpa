@@ -1,0 +1,25 @@
+dubbo:
+    cloud:
+        subscribed-services: java-rpa
+    protocol:
+        id: dubbo
+        name: dubbo
+        port: -1
+    scan:
+        base-packages: com.dongxiaobao.shuai.javarpa
+spring:
+    application:
+        name: java-rpa
+    cloud:
+        nacos:
+            discovery:
+                namespace: public
+                password: nacos
+                server-addr: 39.103.156.3:8848
+                username: nacos
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        name: java_rpa_source
+        password: 3705fdd9a6fdcc9142e0676f35b66d7e
+        url: jdbc:mysql://39.103.156.3:3310/java_rpa?serverTimezone=UTC
+        username: root

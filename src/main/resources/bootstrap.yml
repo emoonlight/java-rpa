@@ -1,0 +1,8 @@
+spring:
+    cloud:
+        nacos:
+            config:
+                contextPath: /nacos
+                password: nacos
+                server-addr: 39.103.156.3:8848
+                username: nacos
